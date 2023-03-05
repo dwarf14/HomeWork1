@@ -1,4 +1,19 @@
-{
+import java.util.Objects;
+import java.util.function.Function;
+
+/**
+ * Правила выполнения домашнего задания:
+ *
+ * 1. Вся работа выполняется в файле доамашнего задания
+ * Если вас просят создать класс - его надо создать вложенным, т.е. внутри класса HomeWorkN
+ * вы создаете класс MyClass {} (все в одном файле)
+ * 2. Задание считается выполненным если все тесты пройдены.
+ * Тест выполнен если напротив него находится знак ✅
+ * 3. Что бы запустить тесты нажмите значек запуска кода напротив мтода main.
+ * ‼️ВАЖНО‼️ Вся работа в модкле ведется на JDK-17, перед запуском скачайте его и установите
+ * правильный JDK и уровень языка в Settings -> Project Structure
+ */
+public class HomeWork2 {
     /*
     Домашнее задание #1:
     У всех полей выставить модфикатор доступа private
@@ -57,7 +72,7 @@
             }
             return students;
         }
-}
+    }
 
     /*
     Это метод main - нажми play что бы запустить тесты
@@ -81,7 +96,7 @@
         print("Teacher: Массив учеников должен быть размером 30", teacher.getStudents().length == 30);
 
         teacher.addStudent(student);
-      //  print("Teacher: Студент сохранился в массив",teacher.getStudents()[0] == student);
+        //  print("Teacher: Студент сохранился в массив",teacher.getStudents()[0] == student);
         String[] calls = teacher.rollCall();
         print("Teacher: Массив rollCall состоит из одиного элемента", calls.length == 1);
         print("Teacher: В строке содержится имя студента", calls[0].contains(STUDENT_NAME));
